@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/974c2a4973.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/logo.png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Web Developer || CSE Undergraduate</p>
+                <h1>Hi, I'm <span>Mittapally Rajendhar</span><br>from India.</h1>
+            </div>
+
+        </div>
+    </div>
+
+
+<!--------------------------about----------------------- -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/rajendhar.jpg" >
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1><br><br>
+                    <p>I am currently  pursuing professional undergraduation in B.tech with CSE as a stream in Bharath University,Chennai.
+                         I love continuous learning and exploring new
+                        things. I am hardworking and flexible at work.<br>
+                         As a fresh graduate with a passion of learning, i am seeking an opportunity
+                        to showcase my technical skills and creativity related to my field.
+                        I possess a solid foundation in web designing, python, c++, database
+                        and i am eager to expand my skills. With a keen eye for design and 
+                        development, I'm ready to contribute to a team and make an impact
+                        in the web design and development industry. 
+                    </p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Python</span></li>
+                            <li><span>Web designing/Development</span></li>
+                            <li><span>SQL/MYSQL</span></li>
+                            <li><span>Data Structures & Algorithms</span></li>
+                            <li><span>Database management system</span></li>
+                            <li><span>JavaScript</span></li>
+                            <li><span>Wordpress</span></li>
+                        </ul>
+                    </div>
+
+
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                
+                            <li><span>Bharat Intern</span><br>Bharat Virtual Internship Program</li>
+                            <li><span>Code Alpha</span><br> Design and Development</li>
+                            
+                
+                    </div>
+
+
+
+
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>Bharath Institute of Higher Education and Research</span><br>Bachelor of Technology-BTech,Computer Science and Engineering.<br>2020-2024</li>
+                            <li><span>Trinity Junior College</span><br>Intermediate <br> 2018-2020</li>
+                            <li><span>Wisdom High School</span><br>State Board <br>2010-2018</li>
+                    
+                           
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!----------------------------services---------------------------->
+
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Design/</h2>
+                    <h2>Development</h2>
+                    <p>Web design and development is an umbrella term that describes the process of creating a website. Like the name suggests, 
+                        it involves two major skill sets: web design and web development.</p>
+                        <a href="#">Learn More</a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-python"></i>
+                    <h2>Python</h2>
+                    <p>Python is a computer programming language often used to build websites and software,
+                         automate tasks, and conduct data analysis. .</p>
+                        <a href="#">Learn More</a>
+                </div>
+
+                <div>
+                    <i class="fa-solid fa-database"></i>
+                    <h2>Database</h2>
+                    <p>A database is an organized collection of structured information,
+                         or data, typically stored electronically in a computer system.</p>
+                        <a href="#">Learn More</a>
+                </div>
+
+                <div>
+                    <i class="fa-duotone fa-crop"></i>
+                    <h2>C/C++ programming</h2>
+                    <p>C++ is an object-oriented programming (OOP) language that is viewed
+                         by many as the best language for creating large-scale applications.</p>
+                        <a href="#">Learn More</a>
+                </div>
+
+                <div>
+                    <i class="fa-brands fa-wordpress"></i>
+                    <h2>Wordpress Design</h2>
+                    <p>WordPress is a content management system (CMS) 
+                        that allows you to host and build websites.</p>
+                        <a href="#">Learn More</a>
+                </div>
+
+                <div>
+                    <i class="fa-duotone fa-code-branch"></i>
+                    <h2>Data Structures</h2>
+                    <p>A data structure is a specialized format for 
+                        organizing, processing, retrieving and storing data. </p>
+                        <a href="#">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-----------------------------portfolio------------------ -->
+
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/ecom.jpg" width="240px" height="260px">
+                    <div class="layer">
+                        <h3>E-Commerce website</h3>
+                        <p>The website helps you to buy and sell yoour goods and services online.
+                            Visit the website for your online shopping experience.
+                        </p>
+                        
+                        <a href="#"><i class="fa-regular fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+
+                <div class="work">
+                    <img src="images/homemain.jpg" width="240px" height="260px">
+                    <div class="layer">
+                        <h3>Home Maintenance System</h3>
+                        <p>A Home Energy Management System (HEMS) or Energy Management System (EMS) 
+                            is a software and hardware ecosystem.
+                        </p> 
+                        <a href="#"><i class="fa-regular fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+
+                <div class="work">
+                    <img src="images/netflixclone.png" width="240px" height="260px">
+                    <div class="layer">
+                        <h3>Netflix Clone</h3>
+                        <p>
+                            Netflix Clone broadcasts movies and TV shows over
+                             the Internet to new locations with enormous audiences. 
+                        
+                        </p>
+                        <a href="#"><i class="fa-regular fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+
+                <div class="work">
+                    <img src="images/Rajendhar_1.jpg" width="240px" height="260px">
+                    <div class="layer">
+                        <h3>Personal Portfolio</h3>
+                        <p>A portfolio is a compilation of academic
+                             and professional materials that exemplifies your 
+                              skills, qualifications, education and experiences.
+                        </p>
+                        <a href="#"><i class="fa-regular fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <a href="#" class="btn">See More</a>
+        </div>
+    </div>
+
+
+<!-- ---------------------------------contact------------------------->
+
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-paper-plane"></i>rajendharm15@gmail.com</p>
+                <p><i class="fa-solid fa-square-phone"></i>+91 8143 17174</p>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://twitter.com/"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="https://instagram.com/"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/in/rajendharm15/"><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+            
+            </div>
+            <div class="contact-right">
+                <form>
+                    <input type="text" name="Name" placeholder="Enter your name">
+                    <input type="text" name="email" placeholder="Your email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="copyright">
+        <p>copyright @ Rajendhar. Made with by youtube tutorials.</p>
+    </div>
+
+
+</div>
+<script src="script.js"></script>
+</body>
+</html>
